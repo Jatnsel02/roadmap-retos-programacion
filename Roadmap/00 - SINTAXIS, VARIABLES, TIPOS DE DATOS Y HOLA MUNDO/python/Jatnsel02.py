@@ -22,7 +22,7 @@ my_int = 1 # Numero entero
 my_float = 3.14 # nuemeros decimales
 my_bool = True # Logica boolea
 my_bool = False # Logica boolea
-my_string = "Hola Python"
-my_other_string = 'Bienvenido '
+my_string = "Hola Python" # Caracteres str 
+my_other_string = 'Bienvenido' # Caracteres str  
 
 print(my_string)
