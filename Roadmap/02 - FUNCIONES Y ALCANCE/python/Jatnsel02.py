@@ -69,3 +69,40 @@ def outer_function():
         print("¡Hola desde la función interna!")
     inner_function()
 outer_function()
+
+# Funciones del lenguaje (built-in functions)
+"""Uso de funciones integradas del lenguaje Python"""
+
+print(len("Hola, Python!"))  # Longitud de una cadena
+print(type(42))  # Tipo de un objeto
+print(max([1, 2, 3, 4, 5]))  # Valor máximo en una lista
+
+# variables locales y globales
+
+global_var = "Python"
+
+print(global_var)  # Acceso a variable global
+
+def hello_python():
+    local_var = "Hola"  # Variable local
+    print(f"{local_var}, {global_var}!")  # Acceso a variable global dentro de la función
+
+hello_python()
+
+# Ejercicio extra
+
+def print_numbers(text_1, text_2)-> int:
+    count = 0
+    for nuember in range(1, 101):
+        if nuember % 3 == 0 and nuember % 5 == 0:
+            print(f"{text_1} {text_2}")
+        elif nuember % 3 == 0:
+            print(text_1)
+        elif nuember % 5 == 0:
+            print(text_2)
+        else:    
+            print(nuember)
+            count += 1
+    return count
+
+print(print_numbers("Texto 1", "Texto 2"))
